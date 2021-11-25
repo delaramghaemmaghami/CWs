@@ -1,0 +1,29 @@
+{
+    "myName": "\u0631\u0647\u0627",
+    "myLastName": "\u067e\u0627\u0631\u0633\u0627",
+    "hobbies": [
+        null,
+        "blogging",
+        "programming"
+    ],
+    "age": 25,
+    "test": null,
+    "languages": [
+        {
+            "name": "python",
+            "years": 2.5
+        },
+        {
+            "name": "R",
+            "years": 2
+        },
+        {
+            "name": "C++",
+            "years": 1
+        },
+        {
+            "name": "Java",
+            "years": 1
+        }
+    ]
+}

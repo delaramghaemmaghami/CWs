@@ -1,0 +1,80 @@
+redis-server
+ping
+config set appendonly yes
+set name azadeh
+get name
+set name delaram nx
+get name
+set age 30 nx
+get age
+set name delaram xx
+get name
+set counter 1
+incr counter
+incr counter
+incrby counter 100
+mset user1 niloufar user2 mehrimah
+mget user1 user2
+set job programmer
+exists job
+del job
+exists job
+set age 19
+type age
+del age
+type age
+set pass 1234
+get pass
+get pass
+set pass 1234 ex 50
+ttl pass
+rpush list1 a
+rpush list1 b
+rpush list1 c
+lrange list1 0 -1
+lpush list1 d
+lpush list1 e
+lrange list1 0 -1
+rpush list2 1 2 3 4 5 ali 6 7 x
+lrange list2 0 -1
+rpop list2
+rpop list2
+lrange list2 0 -1
+ltrim list2 0 4
+lrange list2 0 -1
+set name leila
+lpush name yasaman
+type name
+lpush list3 a b c d e f g
+lrange list3 0 -1
+llen list3
+del list3
+lrange list3 0 -1
+lpop list3
+sadd set1 a b c
+sadd set1 b
+smembers set1
+sadd set2 a b c a
+sismember set1 a
+sismember set1 d
+spop set1
+smembers set1
+srem set1 a
+smembers set1
+zadd sset1 1 a
+zadd sset1 2 b 3 c 4 f
+zscore sset1 c
+zrange sset1 1 2
+zrem sset1 f
+zrange sset1 0 -1
+zrevrange sset1 0 -1
+zrange sset1 0 -1 withscores
+zrangebyscore sset1 -inf 2
+zremrangebyscore sset1 1 2
+zrank sset1 a
+hmset user:1 name narges city esfahan age 19 major cs
+hget user:1 age
+hgetall user:1
+hmget user:1 name city job
+hexists user:1 lname
+hincrby user:1 age 1
