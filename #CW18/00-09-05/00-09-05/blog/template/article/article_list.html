@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HOME</title>
+        {% load static %}
+        <link rel="stylesheet" href={% static "home.css" %}>
+    </head>
+    <body>
+        <h1>My Personal Blog</h1>
+        {% for article in article_list %}
+            <h3><a href="{% url 'article_detail' article.pk %}">{{ article.title }}</a></h3>
+            <p>{{article.body}}</p>
+        {% endfor %}
+    </body>
+</html>

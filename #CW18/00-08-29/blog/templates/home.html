@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>HOME</h1>
+
+    <h3 style="{{style}}">{{test}}</h3>
+
+    <h3>{{name}}</h3>
+
+    <h3>{{age}}</h3>
+
+    <h4>{{friends}}</h4>
+
+    <ul>
+        {% for f in friends%}
+            <li>{{f}}</li>
+        {% endfor %}
+    </ul>
+
+    {% if age > 30 %}
+        <h1>HELLO</h1>
+
+    {% else %}
+        <h1>HI</h1>
+        
+    {% endif %}
+</body>
+</html>

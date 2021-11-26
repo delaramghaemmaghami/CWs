@@ -1,0 +1,37 @@
+{% extends 'index.html' %}
+
+
+{% comment %} {% block mona %}
+<li class="nav-item">
+    <a class="nav-link" href="{% url 'about' %}">About</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="{% url 'contact_us' %}">Contact Us</a>
+</li>
+{% endblock mona %} {% endcomment %}
+
+{% comment %} {% block narges %}
+
+<li class="nav-item">
+    <a class="nav-link" href="{% url 'about' %}">About</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="{% url 'contact_us' %}">Contact Us</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="{% url 'contact_us' %}">Recipe</a>
+</li>
+
+
+{% endblock narges %} {% endcomment %}
+
+{% block index_content %}
+
+<h1>Home Page xxxxxxxxx</h1>
+<h3>{{test}}</h3>
+
+{% include 'pages/sub_home.html' %}
+
+{% endblock index_content %}
+
+
